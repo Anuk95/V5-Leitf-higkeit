@@ -8,4 +8,7 @@
 \contentsline {subsection}{\numberline {2.2}Fehlerrechnung}{5}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Fehlerfortpflanzung f\IeC {\"u}r $\Lambda $}{5}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Fehler f\IeC {\"u}r $\Lambda ^0$ und $K_{\mathrm {S}}$ aus der Auftragung}{6}{subsection.2.4}
-\contentsline {section}{\numberline {3}Literaturverzeichnis}{7}{section.3}
+\contentsline {subsection}{\numberline {2.5}Diskussion systematischer Fehler}{6}{subsection.2.5}
+\contentsline {section}{\numberline {3}Vergleich mit Literaturwerten}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Diskussion}{6}{subsection.3.1}
+\contentsline {section}{\numberline {4}Literaturverzeichnis}{7}{section.4}
