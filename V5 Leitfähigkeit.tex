@@ -80,9 +80,227 @@
 \selectbiblanguage{ngerman}
 
 \begin{document}
-huhu
+
+\begin{titlepage}
+\centering
+\textsc{\Large Praktikum zur Einführung in die physikalische Chemie,\\[1.5ex] Universität Göttingen}
+
+\vspace*{2cm}
+
+\rule{\textwidth}{1pt}\\[0.5cm]
+{\huge \bfseries
+  V5: Leitfähigkeit\\[1.5ex]
+  wässriger Elektrolyte}\\[0.5cm]
+\rule{\textwidth}{1pt}
+
+\vspace*{1cm}
+
+
+\begin{Large}
+\begin{tabular}{ll}
+Durchführende: &  Alea Tokita, Julia Stachowiak\\
+Assistentin: & Annemarie Kehl\\
+ Versuchsdatum: & 01.02.2016\\
+ Datum der ersten Abgabe: & 08.02.2016\\
+
+\end{tabular}
+\end{Large}
+
+\vspace*{1.5cm}
+
+\begin{Large}
+\fbox{
+  \begin{minipage}[t][5cm][t]{7cm} 
+  Messwerte:\\
+  
+Literaturwert: \\
+
+  
+  
+  \end{minipage}
+}
+\end{Large}
+
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+
+
+
+
+
+\section{Auswertung}
+
+Aus den Messungen werden die Mittelwerte des Leitwertes $L$ bestimmt und die Eigenleitfähigkeit des Wassers davon abgezogen. Mit der Zellkonstante $Z$ der Leitfähigkeits-Messzelle wird die spezifische Leitfähigkeit $\kappa$ für jede Lösung errechnet:\\
+
+\begin{equation}
+\kappa = \frac{Z}{R} = Z \cdot L
+\end{equation}
+
+Daraus ergibt sich die molare Leitfähigkeit $\Lambda$ der Lösungen:\\
+
+\begin{equation}
+\Lambda = \frac{\kappa}{c^*}
+\end{equation}
+
+Für die Auftragungen wird die molare Leitfähigkeit bei der gemessenen Temperatur auf die Leitfähigkeit bei $25^\circ\text{C}$ umgerechnet, der Koeffizient $m$ ist für die beiden Lösungen unterschiedlich:\\
+
+\begin{equation}
+\Lambda (25^\circ\text{C}) = \Lambda(\Omega) \cdot [1+ m \cdot (25- (\Omega/^\circ\text{C}))]
+\end{equation}\\
+
+{\centering
+$m_{\mathrm{KCl}} = 2,31 \cdot 10^{-2}$ für $0,1\, \mathrm{M} > c_s > 0,001\, \mathrm{M}$\\
+$m_{\mathrm{HAc}} = 1,44 \cdot 10^{-2}$ für $0,1\, \mathrm{M} > c_s > 0,001\, \mathrm{M}$\\}
+
+
+
+\subsection{Bestimmung von $\Lambda^0$ und $K_{\mathrm{S}}$ für Essigsäure}
+
+Für den schwachen Elektrolyten kann das Ostwaldsche Verdünnungsgesetz umgeformt werden:\\
+
+\begin{equation}
+\frac{1}{\Lambda} = \frac{1}{\Lambda^0} + \frac{c^* \cdot \Lambda}{K_{\mathrm{S}} \cdot (\Lambda^0)^2 \cdot c^0}
+\end{equation}
+
+Aufgetragen wird $\frac{1}{\Lambda}$ gegen $\frac{c^* \cdot \Lambda}{c^0}$.
+Der reziproke Wert für die Grenzleitfähigkeit $\Lambda^0$ ergibt somit durch Extrapolation des Graphen als Schnittpunkt mit der Abszisse.\\
+Als Steigung $m$ bleibt  $m = \frac{1}{K_{\mathrm{S}} \cdot (\Lambda^0)^2 }$.\\
+Die Säurekonstante $K_{\mathrm{S}}$ errechnet sich damit folgendermaßen:\\
+
+\begin{equation}
+K_{\mathrm{S}} = \frac{1}{m \cdot (\Lambda^0)^2}
+\end{equation}
+
+Folgende Werte ergeben sich für die Auftragung:\\
+
+\begin{table} [h]
+\centering 
+\begin{tabular}{|p{4cm}||p{4cm}|p{4cm}|p{4cm}|}
+\hline
+& $\frac{1}{\Lambda(25^\circ\text{C})}$ in $\frac{\mathrm{mol}}{\mathrm{S} \cdot \mathrm{cm}}$ & $\frac{c^*}{c^0} \cdot \Lambda(25^\circ\text{C})$ in $\frac{\mathrm{S} \cdot \mathrm{cm}}{\mathrm{mol}}$ & $\frac{1}{\Lambda}$ in $\frac{\mathrm{mol}}{\mathrm{S} \cdot \mathrm{cm}}$\\
+\hline
+0,1 M & & & \\
+\hline
+0,01 M & & & \\
+\hline
+0,001 M & & & \\
+\hline
+\end{tabular}
+\end{table}
+
+Daraus ergibt sich:\\
+
+$K_{\mathrm{S}} = 2,5 \cdot 10^{-5}$\\
+$\Lambda^0 = 0,3\, \frac{\mathrm{mol}}{\mathrm{S} \cdot \mathrm{cm}}$\\
+
+
+
+
+
+\subsection{Bestimmung von $\Lambda^0$ für Kaliumchlorid}
+
+Für den starken Elektrolyten Kaliumchlorid wird das Kohlrausche Quadratwurzelgesetz $\Lambda$ gegen $\sqrt{c}$ aufgetragen:\\
+
+\begin{equation}
+\Lambda = \Lambda^0 - k \cdot \sqrt{c}
+\end{equation}
+
+$\Lambda^0$ ergibt sich ebenfalls aus Extrapolation als Schnittpunkt mit der Abszisse.
+
+Für die Auftragung ergeben sich als Werte:\\
+
+
+\begin{table} [h]
+\centering 
+\begin{tabular}{|p{4cm}||p{4cm}|p{4cm}|}
+\hline
+& $\Lambda(25^\circ\text{C})$ in $\frac{\mathrm{S} \cdot \mathrm{cm}}{\mathrm{mol}}$ & $\sqrt{c}$ in $\mathrm{mol^{\frac{1}{2}}} \cdot \mathrm{l^{- \frac{1}{2}}}$\\
+\hline
+0,1 M & &  \\
+\hline
+0,01 M & &  \\
+\hline
+0,001 M & &  \\
+\hline
+\end{tabular}
+\end{table}
+
+Für $\Lambda^0$ ergibt sich somit:\\
+$\Lambda^0 = 15$\\
+
+\section{Fehlerrechnung}
+
+\subsection{absolute Fehler}
+Die absoluten Fehler bzw. Messungenauigkeiten der Geräte betragen:\\
+
+\begin{table} [h]
+\centering 
+\begin{tabular}{p{4cm}p{4cm}}
+$\Delta$ Temperatur & $= 0,1^\circ\text{C}$ \\
+$\Delta$ Kolben &$= 1$ mL   \\
+$\Delta$ Pipette &  $=0,1$ mL \\
+\end{tabular}
+\end{table}
+
+
+
+
+
+\subsection{Fehlerrechnung}
+Zuerst wird die absolute Standartabweichung der Leitwerte nach folgender Formel bestimmt:\\
+
+\begin{equation}
+s_{\mathrm{N}} = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N}(x_i -\bar{x})}
+\end{equation} 
+
+Folgende Mittelwerte und absolute Standartabweichungen ergeben sich für die Leiterwerte $L$:\\
+
+\begin{table} [h]
+\centering 
+\begin{tabular}{|p{4cm}||p{2cm}|p{2cm}|p{2cm}|}
+\hline
+& 0,1 M & 0,01 M & 0,001 M \\
+\hline
+Essigsäure & & & \\
+ $\bar{L}$ &7,46 & 2,346 & 6,99\\
+$s_N$ & 0,055 & 0,019 & 0,11 \\
+\hline
+Kaliumchlorid & & &\\
+$\bar{L}$ & 1,756 & 1,98 & 2,04\\
+$s_N$& 0,017 & 0,017 & 0,025\\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Fehlerfortpflanzung}
+$\Lambda$ wird in den Rechnungen weiterverwandt und aufgetragen, sodass eine Fehlerfortpflanzung nach Gauß durchgeführt werden muss. Die Formel dafür lautet:\\
+
+\begin{equation}
+\Delta f = \sqrt{\sum_i \left(\frac{\delta f}{\delta x_i}\right)^2_j \cdot \Delta x_i^2}
+\end{equation}
+
+
+
+
+
+\newpage
+
+\section{Literaturverzeichnis}
+\begin{flushleft}
+1 \quad Gerd Wedler: \emph{Lehrbuch der physikalischen Chemie}, 5. Aufl., WILEY-VCH Verlag GmbH Co. KGaA, Weinheim, \textbf{2004}.\\
+\vspace{0,5 cm}
+2\quad Götz, Eckold: \emph{Sriptum zur Einführung in die physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
+\vspace{0,5 cm}
+3 \quad \emph{Skriptum für das Praktikum zur Einführung in die Physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
+\end{flushleft}
+
 
 
 \end{document}
+
 
 
