@@ -257,7 +257,18 @@ Zuerst wird die absolute Standartabweichung der Leitwerte nach folgender Formel 
 s_{\mathrm{N}} = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N}(x_i -\bar{x})}
 \end{equation} 
 
-Folgende Mittelwerte und absolute Standartabweichungen ergeben sich für die Leiterwerte $L$:\\
+Da es sich um sehr wenige Werte handelt (jeweils 5), muss die Standartabweichung noch mit dem Student'schen t-Faktor multipliziert werden, um den Fehler für $\bar{L}$ zu erhalten:\\
+
+\begin{equation}
+\Delta \bar{L} = t_N \cdot \bar{s}_N
+\end{equation}
+
+Für $95,5 \%$ Konfidenz und 5 Messwerte beträgt dieser 2,8\protect\footnotemark
+
+\footnotetext{Götz, Eckold: \emph{Grundbegriffe der Fehleranalyse bei praktischen Messungen}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.}
+
+
+Somit ergeben sich folgende Fehler für $\bar{L}$:
 
 \begin{table} [h]
 \centering 
@@ -266,22 +277,56 @@ Folgende Mittelwerte und absolute Standartabweichungen ergeben sich für die Lei
 & 0,1 M & 0,01 M & 0,001 M \\
 \hline
 Essigsäure & & & \\
- $\bar{L}$ &7,46 & 2,346 & 6,99\\
+$\bar{L}$ &7,46 & 2,346 & 6,99\\
 $s_N$ & 0,055 & 0,019 & 0,11 \\
+$\Delta L$ & 0,15& 0,054& 0,31\\
 \hline
 Kaliumchlorid & & &\\
 $\bar{L}$ & 1,756 & 1,98 & 2,04\\
 $s_N$& 0,017 & 0,017 & 0,025\\
+$\Delta L$ & 0,047& 0,047& 0,070\\
 \hline
 \end{tabular}
 \end{table}
 
-\subsection{Fehlerfortpflanzung}
+\subsection{Fehlerfortpflanzung für $\Lambda$}
 $\Lambda$ wird in den Rechnungen weiterverwandt und aufgetragen, sodass eine Fehlerfortpflanzung nach Gauß durchgeführt werden muss. Die Formel dafür lautet:\\
 
 \begin{equation}
 \Delta f = \sqrt{\sum_i \left(\frac{\delta f}{\delta x_i}\right)^2_j \cdot \Delta x_i^2}
 \end{equation}
+
+Für $\kappa = Z \cdot L$ und $c^* =\frac{n}{V}$ ergibt sich aus $\Lambda = \frac{\kappa}{c^*}= \frac{Z \cdot L \cdot V}{n}$ folgende Fehlerfortpflanzung:\\
+
+\begin{equation}
+\Delta \Lambda = \sqrt{\left(\frac{Z \cdot V}{n}\right)^2 \cdot {\Delta L}^2 + \left(\frac{Z \cdot L}{n}\right)^2 \cdot \Delta V^2}
+\end{equation}
+
+Daraus ergeben sich folgende Fehler für $\Delta L$, welche als Fehlerbalken in die Auftragungen eingetragen werden:\\
+
+\begin{table} [h]
+\centering 
+\begin{tabular}{|p{4cm}||p{4cm}|p{4cm}|p{4cm}|}
+\hline
+& 0,1 M & 0,01 M & 0,001 M \\
+\hline
+$\Delta L$ Essigsäure  & $100,6527 \approx 1\cdot 10$ & $362,21 \approx 4 \cdot 10^2 $& $20776,39 \approx 2 \cdot 10^4$ \\
+\hline
+$\Delta L$ Kaliumchlorid &$31,5 \approx 3 \cdot 10$ & $315,2 \approx 3 \cdot 10^2$ & $4692,4 \approx 5 \cdot 10^3$\\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Fehler für $\Lambda^0$ und $K_{\mathrm{S}}$ aus der Auftragung}
+
+Durch die eingezeichneten Grenzgeraden kann aus der maximalen und minimalen Steigung der absolute Fehler für $\Lambda^0$ bestimmt werden:\\
+
+
+Bestimmung des Fehlers für $K_{\mathrm{S}}$:\\
+
+
+
+
 
 
 
