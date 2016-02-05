@@ -127,6 +127,60 @@ Literaturwert: \\
 
 \newpage
 
+\section{Theorie}
+Ziel des Versuchs ist es, die Grenzleitfähigkeiten eines starken und eines schwachen Elektrolyten zu bestimmen. Dies erfolgt über Leitfähigkeitsmessungen verschieden konzentrierter Lösungen des Elektrolyten.
+\subsection{Elektrolyt}
+Unter einem wässrigen Elektrolyten $\mathrm{M}_{v+}\mathrm{A_{v-}}$ versteht man einen Stoff, welcher im Wasser in positive und negative Ionen (Kationen und Anionen) dissoziiert. Es wird dabei zwischen schwachen und starken Elektrolyten unterschieden. Ein starker Elektrolyt dissoziiert vollständig in Anionen und Kationen, wobei $v_+$ und $v_-$ die stöchiometrischen Koeffizienten der Dissoziationsreaktion sind und die Ionen verschiedene Ladungszahlen $z_+\mathrm{bzw} z_-$ tragen.\\\\
+Ein schwacher Elektrolyt dissoziiert nur teilweise in Lösung, der Dissoziationsgrad $\alpha $ gibt den Bruchteil der eingesetzten Stoffmenge $n_0$ der dissozierten Moleküle an. Dabei liegen $v_{\pm } \cdot \alpha \cdot n_0$ Mol an postiven und negativen Ionen vor, da gilt:
+\begin{align}
+\alpha = \dfrac{n_0 - n_u}{n_0}
+\end{align} 
+Wobei $n_u$ die Stoffmenge der undissoziierten Teilchen angibt.
+\subsection{Leitfähigkeit}
+Ein Maß für die Leitfähigkeit einer Lösung und demzufolge auch des darin enthaltenen Elektrolyten, ist ihr elektrischer Widerstand $R$. Nach dem Ohmschen Gesetzt gilt folgende Abhängikeit von der elektrischen Spannung $U$ under der Stromstärke $I$:
+\begin{align}
+\dfrac{U}{I} = R = \mathrm{const}.
+\end{align}
+$R$ ist dabei abhängig von den geometrischen Dimensionen des Stromleiters. Im einfachsten Fall eines metallischen Leiters der Länge $l$ und Querschnittsfläche $A$, ist der Widerstand umso stärker je größer $A$ und je kleiner $l$ ist. Demnach ist der Widerstand durch die Abmessungen sowie andererseits durch eine Materialkonstante, der spezifische Wiederstand $\rho $ gegeben:
+\begin{align}
+R = \rho \dfrac{l}{A} \quad \quad  [R]=  \mathrm{m}
+\end{align} 
+%\Ohm !!!
+Da ein Material den Strom umso besser leitet, je geringer sein Widerstand ist, verwendet man den Leitwert $L$, um seine charakteristischen Eigenschaften zu beschreiben. Die Erfassung der geometrischen Abmessungen der Messzelle ist aufgrund der komplizierten Ionenwanderung sehr schwierig, daher wird die Proportionalitätsfaktor $Z$ zwischen $R$ und $\rho$ eingeführt. Des weiteren wird der reziproke Wert des spezifischen Widerstands als $\kappa$ bezeichnet:
+\begin{align}
+L = \dfrac{1}{R} = \dfrac{1}{\rho } \dfrac{A}{l} = \dfrac{\kappa }{Z}
+\end{align} 
+Da die Leitfähigkeit von der Einwaagekonzentration abhängig ist, definiert man die molare Leitfähigkeit $\Lambda$ einer Elektrolytlösung mit der Einwaagekonzentration $c^*$:
+\begin{align}
+\Lambda = \dfrac{\kappa}{c^*}
+\end{align}
+
+\subsection{Kohlrausches Quadratwurzelgesetz, Grenzleitfähigkeit}
+Ionen haben eine unterschiedliche Beweglichkeit und unterschiedliche Ladungen, daher tragen sie in unterschiedlicher Weise zur Gesamtleitfähigkeit bei. Daher ist die molare Leitfähigkeit wiederum Konzentrationsabhängig, dies gilt selbst bei vollständiger Dissoziation, da sich Ionen in ihrer Bewegung gegenseitig Beeinflussen.\\
+Eine wichtige Bezugsgröße ist die molare Grenzleitfähigkeit $\Lambda^0$, welche der bei unendlicher Verdünnung gemessenen molaren Leitfähigkeit entspricht. Sie kann aus einer Extrapolation $ \lim \limits_{c \rightarrow 0 } \Lambda = \Lambda ^0$ bestimmt werden und setzt sich additiv aus den Anteilen einzelner Ionensorten zusammen.\\\\
+Das nach Kohlrausch benannte Quadratwurzelgesetz beschreibt die Konzentrationsabhängigkeit der molaren Leitfähigkeit:
+\begin{align}
+\Lambda = \Lambda ^0 - \kappa \cdot \sqrt{c}
+\end{align}
+\subsection{Unvollständige Dissoziation, Ostwaldsches Verdünnungsgesetzt}
+Die Konzentrationsabhängigkeit der molaren Leitfähigkeit ist bei schwachen Elektrolyten wesentlich stärker. Da sie nicht vollständig dissoziieren gilt das Kohlrausche Quadratwuzelgesetz nicht. Die Leitfähigkeit ist stark durch die Gleichgewichtskonzentration bestimmt.\\\\
+Stellt man das Massenwirkungsgesetzt für die Dissoziation eines schwachen Elektrolyten auf und setzt für die Konzentration des Elektrolyten deren Verhältnis der Einwaagekonzentration $c^*$ zum Dissoziationsgrad ein, erhält man folgenden Ausdruck:
+\begin{align}
+K_\mathrm{S} = \dfrac{\alpha ^2}{1-\alpha } \cdot \dfrac{c^*}{c^0}
+\end{align}
+Zur Leitfähigkeit tragen nur die Ionen des dissoziierten Elektrolyten bei. Bei sehr kleinen Einwagekonzentrationen ($c^* \rightarrow 0$) dissoziieren schwache Elektrolyte vollständig, jedoch ist dann auch die Ionenkonzentration sehr klein. Auch bei höheren Einwaagekonzentrationen ist die Ionenkonzentration aufgrund des niedrigen Dissoziationsgrades die Ionenkonzentration klein. Dementsprechend kann man in guter Näherung annehmen, dass die Leitfähigkeit proportional zur Zahl der dissoziierten Moleküle und damit proportional zum Dissoziationsgrad $\alpha$ ist. Somit gilt näherungweise für die molare Leitfähigkeit:
+\begin{align}
+\lambda = \alpha \cdot \Lambda ^0 
+\end{align}    
+Setzt man dies Beziehung in Gleichung ein, erhält man das Ostwaldsche Verdünnungsgesetzt:
+\begin{align}
+K_\mathrm{S} = \dfrac{c^* \cdot \Lambda ^2}{c^0 \cdot \Lambda ^0 \cdot (\Lambda ^0 - \Lambda)}
+\end{align} 
+ Aus der Auftragung von $\dfrac{1}{\Lambda}$ gegen $c^* \cdot \Lambda$ lässt sich die Säurekonstante und die Grenzleitfähigkeit ermitteln, entsprechend der Gleichung umgestellt:
+\begin{align}
+\dfrac{1}{\Lambda} = \dfrac{1}{\Lambda ^0} * \dfrac{c^* \cdot \Lambda }{K_\mathrm{S} \cdot (\Lambda ^0)^2 \cdot c^\circ}
+\end{align}
+
 
 
 
