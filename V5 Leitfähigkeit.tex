@@ -179,15 +179,15 @@ Folgende Werte ergeben sich für die Auftragung:\\
 
 \begin{table} [h]
 \centering 
-\begin{tabular}{|p{4cm}||p{4cm}|p{4cm}|p{4cm}|}
+\begin{tabular}{|p{4cm}||p{4cm}|p{4cm}|}
 \hline
-& $\frac{1}{\Lambda(25^\circ\text{C})}$ in $\frac{\mathrm{mol}}{\mathrm{S} \cdot \mathrm{cm}}$ & $\frac{c^*}{c^0} \cdot \Lambda(25^\circ\text{C})$ in $\frac{\mathrm{S} \cdot \mathrm{cm}}{\mathrm{mol}}$ & $\frac{1}{\Lambda}$ in $\frac{\mathrm{mol}}{\mathrm{S} \cdot \mathrm{cm}}$\\
+& $\frac{1}{\Lambda(25^\circ\text{C})}$ in $\frac{\mathrm{mol}}{\mathrm{S} \cdot \mathrm{cm}}$ & $\frac{c^*}{c^0} \cdot \Lambda(25^\circ\text{C})$ in $\frac{\mathrm{S} \cdot \mathrm{cm}}{\mathrm{mol}}$\\
 \hline
-0,1 M & & & \\
+0,1 M & 1918 & $5,213 \cdot 10^{-5}$  \\
 \hline
-0,01 M & & & \\
+0,01 M & 614,0 & $1,629 \cdot 10^{-5}$  \\
 \hline
-0,001 M & & & \\
+0,001 M & 210,8 & $4,473 \cdot 10^{-5}$ \\
 \hline
 \end{tabular}
 \end{table}
@@ -220,11 +220,11 @@ Für die Auftragung ergeben sich als Werte:\\
 \hline
 & $\Lambda(25^\circ\text{C})$ in $\frac{\mathrm{S} \cdot \mathrm{cm}}{\mathrm{mol}}$ & $\sqrt{c}$ in $\mathrm{mol^{\frac{1}{2}}} \cdot \mathrm{l^{- \frac{1}{2}}}$\\
 \hline
-0,1 M & &  \\
+0,1 M & 0,01239 & 0,3162 \\
 \hline
-0,01 M & &  \\
+0,01 M & 0,01407 & 0,1000 \\
 \hline
-0,001 M & &  \\
+0,001 M & 0,01439 & 0,03162 \\
 \hline
 \end{tabular}
 \end{table}
@@ -296,7 +296,19 @@ $\Lambda$ wird in den Rechnungen weiterverwandt und aufgetragen, sodass eine Feh
 \Delta f = \sqrt{\sum_i \left(\frac{\delta f}{\delta x_i}\right)^2_j \cdot \Delta x_i^2}
 \end{equation}
 
-Für $\kappa = Z \cdot L$ und $c^* =\frac{n}{V}$ ergibt sich aus $\Lambda = \frac{\kappa}{c^*}= \frac{Z \cdot L \cdot V}{n}$ folgende Fehlerfortpflanzung:\\
+Aus $\kappa = Z \cdot L$ und $c^* =\frac{n}{V}$ ergibt sich:\\
+
+\begin{equation}
+\Lambda = \frac{\kappa}{c^*}= \frac{Z \cdot L \cdot V}{n}
+\end{equation}
+
+Eingesetzt in die Formel für die Umrechnung von $\Lambda$ auf 25 Grad ergibt sich eine absolute Formel, auf die die Fehlerrechnung angewandt werden kann:\\
+
+\begin{equation}
+\Lambda(25^\circ\text{C}) = \left(\frac{Z\cdot L \cdot V}{n}\right) \cdot [1+ m \cdot (25-(\Omega/^\circ\text{C}))]
+\end{equation}
+
+AB hier neu!!!!
 
 \begin{equation}
 \Delta \Lambda = \sqrt{\left(\frac{Z \cdot V}{n}\right)^2 \cdot {\Delta L}^2 + \left(\frac{Z \cdot L}{n}\right)^2 \cdot \Delta V^2}
