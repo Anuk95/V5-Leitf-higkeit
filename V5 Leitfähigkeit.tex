@@ -4,7 +4,7 @@
 
 % Für Kopf und Fußzeilen, siehe auch KOMA-Skript Doku
 \usepackage[komastyle]{scrpage2}
-\pagestyle{empty}
+\pagestyle{plain}
 \setheadsepline{0.5pt}[\color{black}]
 \automark[section]{chapter}
 
@@ -381,6 +381,7 @@ $\Delta L$ in $\mu \mathrm{S}$ & 0,047& 0,047& 0,070\\
 \end{tabular}
 \end{table}
 
+\newpage
 \subsection{Fehlerfortpflanzung für $\Lambda$}
 $\Lambda$ wird in den Rechnungen weiterverwandt und aufgetragen, sodass eine Fehlerfortpflanzung nach Gauß durchgeführt werden muss. Die Formel dafür lautet:\\
 
@@ -410,7 +411,7 @@ Daraus ergeben sich folgende Fehler für $\Delta \Lambda$, welche als Fehlerbalk
 
 \begin{table} [h]
 \centering 
-\begin{tabular}{|p{7cm}||p{3cm}|p{3cm}|p{3cm}|}
+\begin{tabular}{|p{7cm}||p{2cm}|p{2cm}|p{2cm}|}
 \hline
 & 0,1 M & 0,01 M & 0,001 M \\
 \hline
@@ -425,7 +426,7 @@ $\Delta \Lambda$ Kaliumchlorid $[\mathrm{S \cdot m^{2} \cdot mol^{-1}}]$ &$0,013
 
 
 
-
+\newpage
 
 \subsection{Fehler für $\Lambda^0$ und $K_{\mathrm{S}}$ aus der Auftragung}
 
@@ -473,7 +474,7 @@ Essigsäure:\\
 \Delta \Lambda^0 = \frac{2}{(\frac{1}{\Lambda^0})_\mathrm{max} + (\frac{1}{\Lambda^0})_\mathrm{min}} = 0,018\, \mathrm{S \cdot m^2 \cdot mol^{-1}}
 \end{equation}
 
-Analog ergibt sich auch $\Delta Lambda^0$ für Kaliumchlorid:\\
+Analog ergibt sich auch $\Delta \Lambda^0$ für Kaliumchlorid:\\
 
 \begin{equation}
 \Lambda^0_\mathrm{max} = 0,0015\, \mathrm{S \cdot m^{2} \cdot mol^{-1}} 
@@ -502,6 +503,8 @@ Die Eigendissoziation des Wassers wurde berücksichtigt.\\
 Am fehleranfälligsten bzw. ungenausten ist die Bestimmung der Größen durch die Auftragung. Pro Elektrolyt stehen am Schluss nur drei Messwerte zur Verfügung, von denen sich nur zwei richtig verbinden lassen. Das zeichnen der Verbindungsgerade erfolgt nach Augenmaß und kann sehr verschieden ausfallen. Dadurch kann auch der Schnittpunkt mit der Abszisse und somit der Wert für $\Lambda^0$ sehr unterschiedlich ausfallen. Eine zu kleine Steigung würde einen Schnittpunkt bei einem zu großen Wert mit der Abszisse bedeuten und somit ein zu kleines $\Lambda^0$ für Essigsäure und zu großes $\Lambda^0$ für Kaliumchlorid. Diese Ungenauigkeit wurde in der Fehlerfortpflanzung und der grafischen Bestimmung der absoluten Fehler nicht berücksichtigt, sodass die Fehler der Größen tatsächlich deutlich größer sein werden als die in der Fehlerrechnung errechneten Fehler.\\
 Formal ergibt sich die Bestimmung der Grenzleitfähigkeit aus dem Schnittpunkt mit der Abszisse (siehe Formel 15, 16), ist allerdings nur eine Näherung, da unendliche Verdünnung einer sehr kleinen Konzentration entspricht und nicht $c=0$. Der Wert müsste also aus einem Punkt kurz vor dem Schittpunkt bestimmt werden. Aus einem größeren Wert ergäbe sich eine kleinere Grenzleitfähigkeit für Essigsäure und größere Grenzleitfähigkeit für Kaliumchlorid.\\
 Da die Genauigkeit der Auftragung zu klein ist, als dass dies eine Rolle spielen könnte, ist dieser Punkt nur dder Vollständigkeit halber aufgeführt.\\
+
+\newpage 
 
 \section{Diskussion}
 \subsection{Vergleich mit Literaturwerten}
