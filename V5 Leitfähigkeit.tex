@@ -111,14 +111,14 @@ Assistentin: & Annemarie Kehl\\
 \begin{table} [h]
 \centering 
 \begin{tabular}{p{3cm}|p{5cm}p{5cm}}
-& Messwerte & Literaturwerte\\
+& Messwerte & Literaturwerte\footnotemark\\
 \hline
 Essigsäure & &\\
- $K_{\mathrm{S}}$ & $2,5 \cdot 10^{-5} \pm 1,5 \cdot 10^{-7}$& $1,8 \cdot 10^{-5}$\protect\footnotemark\\
-$\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & $ 0,03\, $& 0,03905\protect\footnotemark\\
+ $K_{\mathrm{S}}$  bei $25^\circ\text{C}$ & $2,5 \cdot 10^{-5} \pm 1,5 \cdot 10^{-7}$& $1,738 \cdot 10^{-5}$\\
+$\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & $ 0,030\, \pm 0,018 $& 0,03905\\
 \hline
 Kaliumchlorid & &\\
-$\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & 0,015 & 0,01503\protect\footnotemark\\
+$\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & 0,015 $\pm$ 0,000025 & 0,01503\\
 \end{tabular}
 \end{table}
 \end{large}
@@ -241,8 +241,8 @@ Für die Auftragungen wird die molare Leitfähigkeit bei der gemessenen Temperat
 \end{equation}\\
 
 {\centering
-$m_{\mathrm{KCl}} = 2,31 \cdot 10^{-2}$ für $0,1\, \mathrm{M} > c_s > 0,001\, \mathrm{M}$\\
-$m_{\mathrm{HAc}} = 1,44 \cdot 10^{-2}$ für $0,1\, \mathrm{M} > c_s > 0,001\, \mathrm{M}$\\}
+$m_{\mathrm{KCl}} = 2,31 \cdot 10^{-2}$ für $0,1\, \mathrm{M} \ge c_s \ge 0,001\, \mathrm{M}$\\
+$m_{\mathrm{HAc}} = 1,44 \cdot 10^{-2}$ für $0,1\, \mathrm{M} \ge c_s \ge 0,001\, \mathrm{M}$\\}
 
 
 
@@ -410,13 +410,13 @@ Daraus ergeben sich folgende Fehler für $\Delta \Lambda$, welche als Fehlerbalk
 
 \begin{table} [h]
 \centering 
-\begin{tabular}{|p{4cm}||p{3cm}|p{3cm}|p{3cm}|}
+\begin{tabular}{|p{7cm}||p{3cm}|p{3cm}|p{3cm}|}
 \hline
 & 0,1 M & 0,01 M & 0,001 M \\
 \hline
-$\Delta \Lambda$ Essigsäure  & $0,010$ & $0,037$& $0,21$ \\
+$\Delta \Lambda$ Essigsäure $[\mathrm{S \cdot m^{2} \cdot mol^{-1}}]$ & $0,010$ & $0,037$& $0,21$ \\
 \hline
-$\Delta \Lambda$ Kaliumchlorid &$0,013$ & $0,035$ & $0,47$ \\
+$\Delta \Lambda$ Kaliumchlorid $[\mathrm{S \cdot m^{2} \cdot mol^{-1}}]$ &$0,013$ & $0,035$ & $0,47$ \\
 \hline
 \end{tabular}
 \end{table}
@@ -457,7 +457,35 @@ Somit ergibt sich der absolute Fehler von $K_{\mathrm{S}}$:\\
 \end{equation}
 
 
-Analog lassen sich auch die absoluten Fehler von $\Delta \Lambda^0$ berechnen:\\
+$\Lambda^0$ wurde in beiden Fällen durch Extrapolation des Graphen als Schnittpunkt mit der Abszisse bestimmt. Analog ergibt sich auch der absolute Fehler aus dem maximalen bzw. minimalen Schnittpunkt mit der Achse. \\
+\\
+Essigsäure:\\
+
+\begin{equation}
+\left(\frac{1}{\Lambda^0}\right)_\mathrm{max} = 90\, \mathrm{mol \cdot m^{-2} \cdot S^{-1}}
+\end{equation}
+
+\begin{equation}
+\left(\frac{1}{\Lambda^0}\right)_\mathrm{min} = 20\, \mathrm{mol \cdot m^{-2} \cdot S^{-1}}
+\end{equation}
+
+\begin{equation}
+\Delta \Lambda^0 = \frac{2}{(\frac{1}{\Lambda^0})_\mathrm{max} + (\frac{1}{\Lambda^0})_\mathrm{min}} = 0,018\, \mathrm{S \cdot m^2 \cdot mol^{-1}}
+\end{equation}
+
+Analog ergibt sich auch $\Delta Lambda^0$ für Kaliumchlorid:\\
+
+\begin{equation}
+\Lambda^0_\mathrm{max} = 0,0015\, \mathrm{S \cdot m^{2} \cdot mol^{-1}} 
+\end{equation}
+
+\begin{equation}
+\Lambda^0_\mathrm{min} = 0,00145\, \mathrm{S \cdot m^{2} \cdot mol^{-1}} 
+\end{equation}
+
+\begin{equation}
+\Delta \Lambda^0 = \Lambda^0 - \frac{\Lambda^0_\mathrm{max} \cdot \Lambda^0_\mathrm{min}}{2} = 0,000025 \, \mathrm{S \cdot m^{2} \cdot mol^{-1}} 
+\end{equation}
 
 
 
@@ -483,41 +511,41 @@ Es ergeben sich folgende Werte:\\
 \begin{table} [h]
 \centering 
 \begin{tabular}{p{3cm}|p{5cm}p{5cm}}
-& Messwerte & Literaturwerte\\
+& Messwerte & Literaturwerte\footnotemark\\
 \hline
 Essigsäure & &\\
- $K_{\mathrm{S}}$ & $2,5 \cdot 10^{-5} \pm 1,5 \cdot 10^{-7}$& $1,738 \cdot 10^{-5}$ bei $25^\circ\text{C}$\protect\footnotemark\\
-$\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & $ 0,03\, $& 0,03905\protect\footnotemark\\
+ $K_{\mathrm{S}}$  bei $25^\circ\text{C}$ & $2,5 \cdot 10^{-5} \pm 1,5 \cdot 10^{-7}$& $1,738 \cdot 10^{-5}$\\
+$\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & $ 0,030\, \pm 0,018 $& 0,03905\\
 \hline
 Kaliumchlorid & &\\
-$\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & 0,015 & 0,01503\protect\footnotemark\\
+$\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & 0,015 $\pm$ 0,000025 & 0,01503\\
 \end{tabular}
 \end{table}
 
-
- %\footnotetext{http://www.uni-saarland.de/fak8/kazmaier/PDF_files/GV/GVF_Pkscarbo.pdf, abgerufen am 07.02.16.}\\
-
-  
-Abweichung in Prozent
-KS Temperaturabhängig!
-
-
-
-
-
+\footnotetext{$http://www.uni-saarland.de/fak8/kazmaier/PDF_files/GV/GVF_Pkscarbo.pdf,\, abgerufen\,am\, 07.02.16.$}
 
 
 \subsection{Diskussion}
+
+Auffällig ist eine große Abweichung der Werte vom Literaturwert, die durch die Fehlergrenzen nicht mit einbegriffen wird. Mit einer Abweichung von 1 $\%$ der obersten Fehlergrenze vom Literaturwert liegt die Grenzleitfähigkeit von Kaliumchlorid sehr nah am Literaturwert. \\
+Der Literaturwert der Grenzleitfähigkeit von Essigsäure wird durch die Fehlergrenzen mit eingeschlossen; für $K_\mathrm{S}$ ist der Fehler allerdings wieder zu klein.\\
+
+In dem Versuch wird mit sehr vielen verscheiden fehlerbehafteten Größen gerechnet (besonders die Lösungen), wodurch sich für die einzelnen Werte unterschiedlich große Fehlerbalken ergeben. Die grafische Bestimmung der Fehler ist schwierig, da nur wenig Messwerte vorhanden sind. \\
+
+Die größten Fehlerquellen liegen demnach bei der Auswertung. Zur Verbesserung könnten die Leitfähigkeiten von noch schwächer verdünnten Lösungen gemessen werden, um die grafische Extrapolation zu vereinfachen.  \\
+
+Fehler bzw. Ungenauigkeiten bei der Messung entstanden vor allem durch die Handhabung des Konduktometers. Durch das Springen der Skala um verschiedene Potenzen wurde das Ablesen der Werte sehr unübersichtlich und anfällig für Potenzfehler. Zwischenzeitiges Abspülen der Leitfähigkeits- Messzelle gestaltete sich außerdem als schwierig. \\
+
 
 \newpage
 
 \section{Literaturverzeichnis}
 \begin{flushleft}
-1, 2, 3, 5, 6, 7 \quad Gerd Wedler: \emph{Lehrbuch der physikalischen Chemie}, 5. Aufl., WILEY-VCH Verlag GmbH Co. KGaA, Weinheim, \textbf{2004}.\\
+1 \quad Gerd Wedler: \emph{Lehrbuch der physikalischen Chemie}, 5. Aufl., WILEY-VCH Verlag GmbH Co. KGaA, Weinheim, \textbf{2004}.\\
 \vspace{0,5 cm}
-4\quad Götz, Eckold: \emph{Sriptum zur Einführung in die physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
+2\quad Götz, Eckold: \emph{Sriptum zur Einführung in die physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
 \vspace{0,5 cm}
-8 \quad \emph{Skriptum für das Praktikum zur Einführung in die Physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
+3 \quad \emph{Skriptum für das Praktikum zur Einführung in die Physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
 \end{flushleft}
 
 
