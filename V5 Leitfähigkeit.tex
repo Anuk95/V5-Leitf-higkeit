@@ -85,7 +85,7 @@
 \centering
 \textsc{\Large Praktikum zur Einführung in die physikalische Chemie,\\[1.5ex] Universität Göttingen}
 
-\vspace*{2cm}
+\vspace*{0.5cm}
 
 \rule{\textwidth}{1pt}\\[0.5cm]
 {\huge \bfseries
@@ -93,7 +93,7 @@
   wässriger Elektrolyte}\\[0.5cm]
 \rule{\textwidth}{1pt}
 
-\vspace*{1cm}
+\vspace*{0.5cm}
 
 
 \begin{Large}
@@ -106,15 +106,28 @@ Assistentin: & Annemarie Kehl\\
 \end{tabular}
 \end{Large}
 
-\vspace*{1.5cm}
+\vspace*{1cm}
+
 
 \begin{Large}
 \fbox{
-  \begin{minipage}[t][5cm][t]{7cm} 
-  Messwerte:\\
+  \begin{minipage}[t][9cm][t]{9cm} 
+\textbf{Messwerte:}\\
+Kaliumchlorid: \\
+$\Lambda^0 = 0,015\, \mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}$\\
+Essigsäure:\\
+ $K_{\mathrm{S}} = 2,5 \cdot 10^{-5}$\\
+$\Lambda^0 = 0,03\, \mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}$\\ 
+\textbf{Literaturwerte:}\\
+Kaliumchlorid: \\
+$\Lambda^0 = 0,01503\, \mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}$\protect\footnotemark\\
+Essigsäure:\\
+$\Lambda^0 = 0,03905 \mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}$\protect\footnotemark\\
+$K_{\mathrm{S}} = 1,8 \cdot 10^{-5}$\protect\footnotemark\\
   
-Literaturwert: \\
-
+  
+  
+  
   
   
   \end{minipage}
@@ -127,10 +140,77 @@ Literaturwert: \\
 
 \newpage
 
+\section{Theorie}
+Ziel des Versuchs ist es, die Grenzleitfähigkeiten eines starken und eines schwachen Elektrolyten zu bestimmen. Dies erfolgt über Leitfähigkeitsmessungen verschieden konzentrierter Lösungen des Elektrolyten.
+\subsection{Elektrolyt}
+Unter einem wässrigen Elektrolyten $\mathrm{M}_{v+}\mathrm{A_{v-}}$ versteht man einen Stoff, welcher im Wasser in positive und negative Ionen (Kationen und Anionen) dissoziiert. Es wird dabei zwischen schwachen und starken Elektrolyten unterschieden. Ein starker Elektrolyt dissoziiert vollständig in Anionen und Kationen, wobei $v_+$ und $v_-$ die stöchiometrischen Koeffizienten der Dissoziationsreaktion sind und die Ionen verschiedene Ladungszahlen $z_+\mathrm{bzw} z_-$ tragen.\\\\
+Ein schwacher Elektrolyt dissoziiert nur teilweise in Lösung, der Dissoziationsgrad $\alpha $ gibt den Bruchteil der eingesetzten Stoffmenge $n_0$ der dissozierten Moleküle an. Dabei liegen $v_{\pm } \cdot \alpha \cdot n_0$ Mol an postiven und negativen Ionen vor, da gilt:
+\begin{align}
+\alpha = \dfrac{n_0 - n_u}{n_0}
+\end{align} 
+Wobei $n_u$ die Stoffmenge der undissoziierten Teilchen angibt.
+\subsection{Leitfähigkeit}
+Ein Maß für die Leitfähigkeit einer Lösung und demzufolge auch des darin enthaltenen Elektrolyten, ist ihr elektrischer Widerstand $R$. Nach dem Ohmschen Gesetzt gilt folgende Abhängikeit von der elektrischen Spannung $U$ under der Stromstärke $I$:
+\begin{align}
+\dfrac{U}{I} = R = \mathrm{const}.
+\end{align}
+$R$ ist dabei abhängig von den geometrischen Dimensionen des Stromleiters. Im einfachsten Fall eines metallischen Leiters der Länge $l$ und Querschnittsfläche $A$, ist der Widerstand umso stärker je größer $A$ und je kleiner $l$ ist. Demnach ist der Widerstand durch die Abmessungen sowie andererseits durch eine Materialkonstante, der spezifische Wiederstand $\rho $ gegeben:
+\begin{align}
+R = \rho \dfrac{l}{A} \quad \quad  [R]=  \mathrm{m}
+\end{align} 
+%\Ohm !!!
+Da ein Material den Strom umso besser leitet, je geringer sein Widerstand ist, verwendet man den Leitwert $L$, um seine charakteristischen Eigenschaften zu beschreiben. Die Erfassung der geometrischen Abmessungen der Messzelle ist aufgrund der komplizierten Ionenwanderung sehr schwierig, daher wird die Proportionalitätsfaktor $Z$ zwischen $R$ und $\rho$ eingeführt. Des weiteren wird der reziproke Wert des spezifischen Widerstands als $\kappa$ bezeichnet:
+\begin{align}
+L = \dfrac{1}{R} = \dfrac{1}{\rho } \dfrac{A}{l} = \dfrac{\kappa }{Z}
+\end{align} 
+Da die Leitfähigkeit von der Einwaagekonzentration abhängig ist, definiert man die molare Leitfähigkeit $\Lambda$ einer Elektrolytlösung mit der Einwaagekonzentration $c^*$:
+\begin{align}
+\Lambda = \dfrac{\kappa}{c^*}
+\end{align}
+
+\subsection{Kohlrausches Quadratwurzelgesetz, Grenzleitfähigkeit}
+Ionen haben eine unterschiedliche Beweglichkeit und unterschiedliche Ladungen, daher tragen sie in unterschiedlicher Weise zur Gesamtleitfähigkeit bei. Daher ist die molare Leitfähigkeit wiederum Konzentrationsabhängig, dies gilt selbst bei vollständiger Dissoziation, da sich Ionen in ihrer Bewegung gegenseitig Beeinflussen.\\
+Eine wichtige Bezugsgröße ist die molare Grenzleitfähigkeit $\Lambda^0$, welche der bei unendlicher Verdünnung gemessenen molaren Leitfähigkeit entspricht. Sie kann aus einer Extrapolation $ \lim \limits_{c \rightarrow 0 } \Lambda = \Lambda ^0$ bestimmt werden und setzt sich additiv aus den Anteilen einzelner Ionensorten zusammen.\\\\
+Das nach Kohlrausch benannte Quadratwurzelgesetz beschreibt die Konzentrationsabhängigkeit der molaren Leitfähigkeit:
+\begin{align}
+\Lambda = \Lambda ^0 - \kappa \cdot \sqrt{c}
+\end{align}
+\subsection{Unvollständige Dissoziation, Ostwaldsches Verdünnungsgesetzt}
+Die Konzentrationsabhängigkeit der molaren Leitfähigkeit ist bei schwachen Elektrolyten wesentlich stärker. Da sie nicht vollständig dissoziieren gilt das Kohlrausche Quadratwuzelgesetz nicht. Die Leitfähigkeit ist stark durch die Gleichgewichtskonzentration bestimmt.\\\\
+Stellt man das Massenwirkungsgesetzt für die Dissoziation eines schwachen Elektrolyten auf und setzt für die Konzentration des Elektrolyten deren Verhältnis der Einwaagekonzentration $c^*$ zum Dissoziationsgrad ein, erhält man folgenden Ausdruck:
+\begin{align}
+K_\mathrm{S} = \dfrac{\alpha ^2}{1-\alpha } \cdot \dfrac{c^*}{c^0}
+\end{align}
+Zur Leitfähigkeit tragen nur die Ionen des dissoziierten Elektrolyten bei. Bei sehr kleinen Einwagekonzentrationen ($c^* \rightarrow 0$) dissoziieren schwache Elektrolyte vollständig, jedoch ist dann auch die Ionenkonzentration sehr klein. Auch bei höheren Einwaagekonzentrationen ist die Ionenkonzentration aufgrund des niedrigen Dissoziationsgrades die Ionenkonzentration klein. Dementsprechend kann man in guter Näherung annehmen, dass die Leitfähigkeit proportional zur Zahl der dissoziierten Moleküle und damit proportional zum Dissoziationsgrad $\alpha$ ist. Somit gilt näherungweise für die molare Leitfähigkeit:
+\begin{align}
+\lambda = \alpha \cdot \Lambda ^0 
+\end{align}    
+Setzt man dies Beziehung in Gleichung ein, erhält man das Ostwaldsche Verdünnungsgesetzt:
+\begin{align}
+K_\mathrm{S} = \dfrac{c^* \cdot \Lambda ^2}{c^0 \cdot \Lambda ^0 \cdot (\Lambda ^0 - \Lambda)}
+\end{align} 
+ Aus der Auftragung von $\dfrac{1}{\Lambda}$ gegen $c^* \cdot \Lambda$ lässt sich die Säurekonstante und die Grenzleitfähigkeit ermitteln, entsprechend der Gleichung umgestellt:
+\begin{align}
+\dfrac{1}{\Lambda} = \dfrac{1}{\Lambda ^0} * \dfrac{c^* \cdot \Lambda }{K_\mathrm{S} \cdot (\Lambda ^0)^2 \cdot c^\circ}
+\end{align}
+
+\newpage
+\section{Versuchsaufbau}
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=1]{Versuchsaufbau.png} \end{center}
+\caption {Versuchsaufbau}
+\end{figure}
+
+Gemessen wird der elektrische Leitwert $L$ der Elektrolytlösung in der elektrochemischen Zelle eines Konduktometers. Dies erfolgt im genaueren mithilfe einer Wheatstone-Brückenschaltung. Die verwendeten Zellen zeigen bei Abgleich der Messbrücke auf den Zeigerauschlag null direkt den Leitert $L$ an. Auch die Zellkonstante $Z$ ist bereits gegeben.
+\section{Versuchdurchführung}
+Da die Konzentrationsabhängigkeit der molaren Leitfähigkeit von Kaliumchlorid- und Essigsäurelösungen bestimmt werden sollen, werden zunächst Essigsäure- und Kaliumchloridlösungen der Konzentration $0,1 {~}\mathrm{M}$, $0,01{~}\mathrm{M}$ und $0,001{~}\mathrm{M}$ hergestellt. Dies erfolgt über das Verdünnen von $0,1{~}\mathrm{M}$ Lösungen der Elektrolyten.\\\\
+Bei den Messungen wird mit der Messung der Eigenleitfähigkeit von destillierten Wasser, welches zum Verdünnen benutzt wurde, begonnen, um eine Abschätzung des Einflusses der Eigenleitfähigkeit des Wassers auf die Messergebnisse zu ermöglichen. Anschließend wird bei den Messungen der Elektrolytlösungen die Lösung der geringsten Konzentration zuerst gemessen. Die Leifähigkeit der Lösungen wird mindestens fünfmal gemessen und zu jeder Messung die Temperatur der Lösung notiert. Beim Messen muss darauf geachtet werden, dass Stellrad am Konduktometer nur langsam und vorsichtig zu bewegen.\\\\
+Vor der Messung werden Becherglas, Tauchelektrode und das Thermometer mehrfach mit destilliertem Wassern und anschließend mit der zu messenden Lösung gespült. Zur Messung wird das Becherglas so weit mit der Messlösung gefüllt, dass dass die Tauchglocke der Elektroden vollständig bedeckt ist und zur vollständigen Benetzung vorsichtig mit der Elektrode gerührt. Zwischen den Messungen wird die Elektrode gründlich mit destilliertem Wasser gespült.
 
 
 
-
+\newpage
 
 \section{Auswertung}
 
@@ -175,13 +255,13 @@ Die Säurekonstante $K_{\mathrm{S}}$ errechnet sich damit folgendermaßen:\\
 K_{\mathrm{S}} = \frac{1}{m \cdot (\Lambda^0)^2}
 \end{equation}
 
-Folgende Werte ergeben sich für die Auftragung:\\
+Nach Abziehen der Eigenleitfähigkeit des Wassers und Umformen ergeben sich folgende Werte für die Auftragung:\\
 
 \begin{table} [h]
 \centering 
 \begin{tabular}{|p{4cm}||p{4cm}|p{4cm}|}
 \hline
-& $\frac{1}{\Lambda(25^\circ\text{C})}$ in $\frac{\mathrm{mol}}{\mathrm{S} \cdot \mathrm{cm}}$ & $\frac{c^*}{c^0} \cdot \Lambda(25^\circ\text{C})$ in $\frac{\mathrm{S} \cdot \mathrm{cm}}{\mathrm{mol}}$\\
+& $\frac{1}{\Lambda(25^\circ\text{C})}$ in $\frac{\mathrm{mol}}{\mathrm{S} \cdot \mathrm{m^2}}$ & $\frac{c^*}{c^0} \cdot \Lambda(25^\circ\text{C})$ in $\frac{\mathrm{S} \cdot \mathrm{m^2}}{\mathrm{mol}}$\\
 \hline
 0,1 M & 1918 & $5,213 \cdot 10^{-5}$  \\
 \hline
@@ -218,7 +298,7 @@ Für die Auftragung ergeben sich als Werte:\\
 \centering 
 \begin{tabular}{|p{4cm}||p{4cm}|p{4cm}|}
 \hline
-& $\Lambda(25^\circ\text{C})$ in $\frac{\mathrm{S} \cdot \mathrm{cm}}{\mathrm{mol}}$ & $\sqrt{c}$ in $\mathrm{mol^{\frac{1}{2}}} \cdot \mathrm{l^{- \frac{1}{2}}}$\\
+& $\Lambda(25^\circ\text{C})$ in $\frac{\mathrm{S} \cdot \mathrm{m^2}}{\mathrm{mol}}$ & $\sqrt{c}$ in $\mathrm{mol^{\frac{1}{2}}} \cdot \mathrm{l^{- \frac{1}{2}}}$\\
 \hline
 0,1 M & 0,01239 & 0,3162 \\
 \hline
@@ -231,6 +311,8 @@ Für die Auftragung ergeben sich als Werte:\\
 
 Für $\Lambda^0$ ergibt sich somit:\\
 $\Lambda^0 = 15$\\
+
+\newpage 
 
 \section{Fehlerrechnung}
 
@@ -246,8 +328,10 @@ $\Delta$ Pipette &  $=0,1$ mL \\
 \end{tabular}
 \end{table}
 
-
-
+Der Fehler der Temperatur bzw. des Termometers ist vernachlässigbar klein und nur der Vollständigkeit halber aufgeführt. Er wird in der weiteren Fehlerrechnung vernachlässigt.\\
+ Der Fehler der Einwaagekonzentration $c*$ ergibt sich somit:\\
+ 
+ 
 
 
 \subsection{Fehlerrechnung}
@@ -277,14 +361,14 @@ Somit ergeben sich folgende Fehler für $\bar{L}$:
 & 0,1 M & 0,01 M & 0,001 M \\
 \hline
 Essigsäure & & & \\
-$\bar{L}$ &7,46 & 2,346 & 6,99\\
+$\bar{L}$ in $\mu \mathrm{S}$ &7,46 & 2,346 & 6,99\\
 $s_N$ & 0,055 & 0,019 & 0,11 \\
-$\Delta L$ & 0,15& 0,054& 0,31\\
+$\Delta L$ in $\mu \mathrm{S}$ & 0,15& 0,054& 0,31\\
 \hline
 Kaliumchlorid & & &\\
-$\bar{L}$ & 1,756 & 1,98 & 2,04\\
+$\bar{L}$ in $\mu \mathrm{S}$& 1,756 & 1,98 & 2,04\\
 $s_N$& 0,017 & 0,017 & 0,025\\
-$\Delta L$ & 0,047& 0,047& 0,070\\
+$\Delta L$ in $\mu \mathrm{S}$ & 0,047& 0,047& 0,070\\
 \hline
 \end{tabular}
 \end{table}
@@ -302,39 +386,67 @@ Aus $\kappa = Z \cdot L$ und $c^* =\frac{n}{V}$ ergibt sich:\\
 \Lambda = \frac{\kappa}{c^*}= \frac{Z \cdot L \cdot V}{n}
 \end{equation}
 
-Eingesetzt in die Formel für die Umrechnung von $\Lambda$ auf 25 Grad ergibt sich eine absolute Formel, auf die die Fehlerrechnung angewandt werden kann:\\
+%Eingesetzt in die Formel für die Umrechnung von $\Lambda$ auf 25 Grad ergibt sich eine absolute Formel, auf die die Fehlerrechnung angewandt werden kann:\\
 
-\begin{equation}
-\Lambda(25^\circ\text{C}) = \left(\frac{Z\cdot L \cdot V}{n}\right) \cdot [1+ m \cdot (25-(\Omega/^\circ\text{C}))]
-\end{equation}
+%\begin{equation}
+%\Lambda(25^\circ\text{C}) = \left(\frac{Z\cdot L \cdot V}{n}\right) \cdot [1+ m \cdot (25-(\Omega/^\circ\text{C}))]
+%\end{equation}
 
-AB hier neu!!!!
+%AB hier neu!!!!
 
 \begin{equation}
 \Delta \Lambda = \sqrt{\left(\frac{Z \cdot V}{n}\right)^2 \cdot {\Delta L}^2 + \left(\frac{Z \cdot L}{n}\right)^2 \cdot \Delta V^2}
 \end{equation}
 
-Daraus ergeben sich folgende Fehler für $\Delta L$, welche als Fehlerbalken in die Auftragungen eingetragen werden:\\
+Daraus ergeben sich folgende Fehler für $\Delta \Lambda$, welche als Fehlerbalken in die Auftragungen eingetragen werden. Der Mittelwert dieser Fehler ergibt je $\Delta \Lambda^0$:\\
 
 \begin{table} [h]
 \centering 
-\begin{tabular}{|p{4cm}||p{4cm}|p{4cm}|p{4cm}|}
+\begin{tabular}{|p{4cm}||p{3cm}|p{3cm}|p{3cm}|p{3cm}}
 \hline
-& 0,1 M & 0,01 M & 0,001 M \\
+& 0,1 M & 0,01 M & 0,001 M &$\Delta \Lambda^0$\\
 \hline
-$\Delta L$ Essigsäure  & $100,6527 \approx 1\cdot 10$ & $362,21 \approx 4 \cdot 10^2 $& $20776,39 \approx 2 \cdot 10^4$ \\
+$\Delta \Lambda$ Essigsäure  & $0,010$ & $0,037$& $0,21$ & 0,086 \\
 \hline
-$\Delta L$ Kaliumchlorid &$31,5 \approx 3 \cdot 10$ & $315,2 \approx 3 \cdot 10^2$ & $4692,4 \approx 5 \cdot 10^3$\\
+$\Delta \Lambda$ Kaliumchlorid &$0,013$ & $0,035$ & $0,47$ & 0,17 \\
 \hline
 \end{tabular}
 \end{table}
+
+
+
+
+
+
 
 \subsection{Fehler für $\Lambda^0$ und $K_{\mathrm{S}}$ aus der Auftragung}
 
 Durch die eingezeichneten Grenzgeraden kann aus der maximalen und minimalen Steigung der absolute Fehler für $\Lambda^0$ bestimmt werden:\\
 
 
-Bestimmung des Fehlers für $K_{\mathrm{S}}$:\\
+\begin{equation}
+\frac{1}{K_{\mathrm{S}\,\mathrm{min}}} =\left( \frac{17600-400}{0,048-0,009} \right)= 44\cdot 10^4
+\end{equation}
+
+\begin{equation}
+\frac{1}{K_{\mathrm{S}\,\mathrm{max}}}\,=\,\left(\frac{17700-230}{0,05-0,004}\right)\,=\, 38 \cdot 10^4
+\end{equation}
+
+
+\begin{equation}
+K_{\mathrm{S}\,\mathrm{min}} = 2,3 \cdot 10^{-6}
+\end{equation}
+
+\begin{equation}
+K_{\mathrm{S}\,\mathrm{max}} = 2,6 \cdot 10^{-6}
+\end{equation}
+
+\begin{equation}
+\Delta K_{\mathrm{S}} = \frac{K_{\mathrm{S}\,\mathrm{max}} - K_{\mathrm{S}\,\mathrm{min}}}{2} = 1,5 \cdot 10^{-7}
+\end{equation}
+
+
+
 
 
 \subsection{Diskussion systematischer Fehler}
@@ -356,11 +468,11 @@ Einfluss Temperatur berücksichtigt/nicht berücksichtigt?
 
 \section{Literaturverzeichnis}
 \begin{flushleft}
-1 \quad Gerd Wedler: \emph{Lehrbuch der physikalischen Chemie}, 5. Aufl., WILEY-VCH Verlag GmbH Co. KGaA, Weinheim, \textbf{2004}.\\
+1, 2, 3 \quad Gerd Wedler: \emph{Lehrbuch der physikalischen Chemie}, 5. Aufl., WILEY-VCH Verlag GmbH Co. KGaA, Weinheim, \textbf{2004}.\\
 \vspace{0,5 cm}
-2\quad Götz, Eckold: \emph{Sriptum zur Einführung in die physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
+4\quad Götz, Eckold: \emph{Sriptum zur Einführung in die physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
 \vspace{0,5 cm}
-3 \quad \emph{Skriptum für das Praktikum zur Einführung in die Physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
+5 \quad \emph{Skriptum für das Praktikum zur Einführung in die Physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
 \end{flushleft}
 
 
