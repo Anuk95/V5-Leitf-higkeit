@@ -115,7 +115,7 @@ Assistentin: & Annemarie Kehl\\
 \hline
 Essigsäure & &\\
  $K_{\mathrm{S}}$  bei $25^\circ\text{C}$ & $2,5 \cdot 10^{-5} \pm 1,5 \cdot 10^{-7}$& $1,738 \cdot 10^{-5}$\\
-$\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & $ 0,030\, \pm 0,018 $& 0,03905\\
+$\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & $ 0,030\, \pm 0,012 $& 0,03905\\
 \hline
 Kaliumchlorid & &\\
 $\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & 0,015 $\pm$ 0,000025 & 0,01503\\
@@ -255,7 +255,7 @@ Für den schwachen Elektrolyten kann das Ostwaldsche Verdünnungsgesetz umgeform
 \end{equation}
 
 Aufgetragen wird $\frac{1}{\Lambda}$ gegen $\frac{c^* \cdot \Lambda}{c^0}$.
-Der reziproke Wert für die Grenzleitfähigkeit $\Lambda^0$ ergibt somit durch Extrapolation des Graphen als Schnittpunkt mit der Abszisse.\\
+Der reziproke Wert für die Grenzleitfähigkeit $\Lambda^0$ ergibt somit durch Extrapolation des Graphen als Schnittpunkt mit der Ordinate.\\
 Als Steigung $m$ bleibt  $m = \frac{1}{K_{\mathrm{S}} \cdot (\Lambda^0)^2 }$.\\
 Die Säurekonstante $K_{\mathrm{S}}$ errechnet sich damit folgendermaßen:\\
 
@@ -297,7 +297,7 @@ Für den starken Elektrolyten Kaliumchlorid wird das Kohlrausche Quadratwurzelge
 \Lambda = \Lambda^0 - k \cdot \sqrt{c}
 \end{equation}
 
-$\Lambda^0$ ergibt sich ebenfalls aus Extrapolation als Schnittpunkt mit der Abszisse.
+$\Lambda^0$ ergibt sich ebenfalls aus Extrapolation als Schnittpunkt mit der Ordinate.
 
 Für die Auftragung ergeben sich als Werte:\\
 
@@ -369,14 +369,14 @@ Somit ergeben sich folgende Fehler für $\bar{L}$:
 & 0,1 M & 0,01 M & 0,001 M \\
 \hline
 Essigsäure & & & \\
-$\bar{L}$ in $\mu \mathrm{S}$ &7,46 & 2,346 & 6,99\\
-$s_N$ & 0,055 & 0,019 & 0,11 \\
-$\Delta L$ in $\mu \mathrm{S}$ & 0,15& 0,054& 0,31\\
+$\bar{L}$ in $\mu \mathrm{S}$ &746 & 235 & 69,9\\
+$s_N$ in $\mu \mathrm{S}$ & 5,5 & 1,9 & 1,1 \\
+$\Delta L$ in $\mu \mathrm{S}$ & 15& 5,4& 3,1\\
 \hline
 Kaliumchlorid & & &\\
-$\bar{L}$ in $\mu \mathrm{S}$& 1,756 & 1,98 & 2,04\\
-$s_N$& 0,017 & 0,017 & 0,025\\
-$\Delta L$ in $\mu \mathrm{S}$ & 0,047& 0,047& 0,070\\
+$\bar{L}$ in m $\mathrm{S}$& 17,6 & 1,98 & 0,204\\
+$s_N$ in m $\mathrm{S}$ & 0,17 & 0,017 & 0,0025\\
+$\Delta L$ in m $\mathrm{S}$ & 0,47& 0,047& 0,0070\\
 \hline
 \end{tabular}
 \end{table}
@@ -393,6 +393,12 @@ Aus $\kappa = Z \cdot L$ und $c^* =\frac{n}{V}$ ergibt sich:\\
 
 \begin{equation}
 \Lambda = \frac{\kappa}{c^*}= \frac{Z \cdot L \cdot V}{n}
+\end{equation}
+
+Der Fehler für das Volumen setzt sich hierbei additiv aus denabsoluten Fehlern für Kolben und Pipette zusammen:\\
+
+\begin{equation}
+\Delta V = \Delta \mathrm{Kolben} + \Delta \mathrm{Pipette} = 1,1 \cdot 10^{-3} L
 \end{equation}
 
 %Eingesetzt in die Formel für die Umrechnung von $\Lambda$ auf 25 Grad ergibt sich eine absolute Formel, auf die die Fehlerrechnung angewandt werden kann:\\
@@ -415,9 +421,9 @@ Daraus ergeben sich folgende Fehler für $\Delta \Lambda$, welche als Fehlerbalk
 \hline
 & 0,1 M & 0,01 M & 0,001 M \\
 \hline
-$\Delta \Lambda$ Essigsäure $[\mathrm{S \cdot m^{2} \cdot mol^{-1}}]$ & $0,010$ & $0,037$& $0,21$ \\
+$\Delta \Lambda$ Essigsäure $[\mathrm{S \cdot m^{2} \cdot mol^{-1}}]$ & $1,2 \cdot 10^{-6}$ & $3,5 \cdot 10^{-5}$& $2,1 \cdot 10^{-4}$ \\
 \hline
-$\Delta \Lambda$ Kaliumchlorid $[\mathrm{S \cdot m^{2} \cdot mol^{-1}}]$ &$0,013$ & $0,035$ & $0,47$ \\
+$\Delta \Lambda$ Kaliumchlorid $[\mathrm{S \cdot m^{2} \cdot mol^{-1}}]$ &$3,1 \cdot 10^{-4}$ & $3,1 \cdot 10^{-4}$ & $4,9 \cdot 10^{-5}$ \\
 \hline
 \end{tabular}
 \end{table}
@@ -458,7 +464,7 @@ Somit ergibt sich der absolute Fehler von $K_{\mathrm{S}}$:\\
 \end{equation}
 
 
-$\Lambda^0$ wurde in beiden Fällen durch Extrapolation des Graphen als Schnittpunkt mit der Abszisse bestimmt. Analog ergibt sich auch der absolute Fehler aus dem maximalen bzw. minimalen Schnittpunkt mit der Achse. \\
+$\Lambda^0$ wurde in beiden Fällen durch Extrapolation des Graphen als Schnittpunkt mit der Ordinate bestimmt. Analog ergibt sich auch der absolute Fehler aus dem maximalen bzw. minimalen Schnittpunkt mit der Achse. \\
 \\
 Essigsäure:\\
 
@@ -471,7 +477,7 @@ Essigsäure:\\
 \end{equation}
 
 \begin{equation}
-\Delta \Lambda^0 = \frac{2}{(\frac{1}{\Lambda^0})_\mathrm{max} + (\frac{1}{\Lambda^0})_\mathrm{min}} = 0,018\, \mathrm{S \cdot m^2 \cdot mol^{-1}}
+\Delta \Lambda^0 = \Lambda^0 - \frac{2}{(\frac{1}{\Lambda^0})_\mathrm{max} + (\frac{1}{\Lambda^0})_\mathrm{min}} = 0,012\, \mathrm{S \cdot m^2 \cdot mol^{-1}}
 \end{equation}
 
 Analog ergibt sich auch $\Delta \Lambda^0$ für Kaliumchlorid:\\
@@ -485,7 +491,7 @@ Analog ergibt sich auch $\Delta \Lambda^0$ für Kaliumchlorid:\\
 \end{equation}
 
 \begin{equation}
-\Delta \Lambda^0 = \Lambda^0 - \frac{\Lambda^0_\mathrm{max} \cdot \Lambda^0_\mathrm{min}}{2} = 0,000025 \, \mathrm{S \cdot m^{2} \cdot mol^{-1}} 
+\Delta \Lambda^0 = \Lambda^0 - \frac{\Lambda^0_\mathrm{max} \cdot \Lambda^0_\mathrm{min}}{2} = 0,000025 \, \mathrm{S \cdot m^{2} \cdot mol^{-1} = 2,5 \cdot 10^{-5}\, \mathrm{S \cdot m^{2} \cdot mol^{-1}}} 
 \end{equation}
 
 
@@ -500,9 +506,15 @@ In der Rechnung vernachlässigt wurde die Messungenauigkeit des Thermometers, de
 
 Die Eigendissoziation des Wassers wurde berücksichtigt.\\
 
-Am fehleranfälligsten bzw. ungenausten ist die Bestimmung der Größen durch die Auftragung. Pro Elektrolyt stehen am Schluss nur drei Messwerte zur Verfügung, von denen sich nur zwei richtig verbinden lassen. Das zeichnen der Verbindungsgerade erfolgt nach Augenmaß und kann sehr verschieden ausfallen. Dadurch kann auch der Schnittpunkt mit der Abszisse und somit der Wert für $\Lambda^0$ sehr unterschiedlich ausfallen. Eine zu kleine Steigung würde einen Schnittpunkt bei einem zu großen Wert mit der Abszisse bedeuten und somit ein zu kleines $\Lambda^0$ für Essigsäure und zu großes $\Lambda^0$ für Kaliumchlorid. Diese Ungenauigkeit wurde in der Fehlerfortpflanzung und der grafischen Bestimmung der absoluten Fehler nicht berücksichtigt, sodass die Fehler der Größen tatsächlich deutlich größer sein werden als die in der Fehlerrechnung errechneten Fehler.\\
-Formal ergibt sich die Bestimmung der Grenzleitfähigkeit aus dem Schnittpunkt mit der Abszisse (siehe Formel 15, 16), ist allerdings nur eine Näherung, da unendliche Verdünnung einer sehr kleinen Konzentration entspricht und nicht $c=0$. Der Wert müsste also aus einem Punkt kurz vor dem Schittpunkt bestimmt werden. Aus einem größeren Wert ergäbe sich eine kleinere Grenzleitfähigkeit für Essigsäure und größere Grenzleitfähigkeit für Kaliumchlorid.\\
-Da die Genauigkeit der Auftragung zu klein ist, als dass dies eine Rolle spielen könnte, ist dieser Punkt nur dder Vollständigkeit halber aufgeführt.\\
+Am fehleranfälligsten bzw. ungenausten ist die Bestimmung der Größen durch die Auftragung. Pro Elektrolyt stehen am Schluss nur drei Messwerte zur Verfügung, von denen sich nur zwei richtig verbinden lassen. Das zeichnen der Verbindungsgerade erfolgt nach Augenmaß und kann sehr verschieden ausfallen. Dadurch kann auch der Schnittpunkt mit der Ordinate und somit der Wert für $\Lambda^0$ sehr unterschiedlich ausfallen. Eine zu kleine Steigung würde einen Schnittpunkt bei einem zu großen Wert mit der Ordinate bedeuten und somit ein zu kleines $\Lambda^0$ für Essigsäure und zu großes $\Lambda^0$ für Kaliumchlorid. Diese Ungenauigkeit wurde in der Fehlerfortpflanzung und der grafischen Bestimmung der absoluten Fehler nicht berücksichtigt, sodass die Fehler der Größen tatsächlich deutlich größer sein werden als die in der Fehlerrechnung errechneten Fehler.\\
+Formal ergibt sich die Bestimmung der Grenzleitfähigkeit aus dem Schnittpunkt mit der Ordinate (siehe Formel 15, 16), ist allerdings nur eine Näherung, da unendliche Verdünnung einer sehr kleinen Konzentration entspricht und nicht $c=0$. Der Wert müsste also aus einem Punkt kurz vor dem Schittpunkt bestimmt werden. Aus einem größeren Wert ergäbe sich eine kleinere Grenzleitfähigkeit für Essigsäure und größere Grenzleitfähigkeit für Kaliumchlorid.\\
+Da die Genauigkeit der Auftragung zu klein ist, als dass dies eine Rolle spielen könnte, ist dieser Punkt nur der Vollständigkeit halber aufgeführt.\\
+
+
+Außerdem ist das Gerät möglicherweise fehlerhaft und zeigt einen falschen Wert an.\\
+
+
+
 
 \newpage 
 
@@ -518,7 +530,7 @@ Es ergeben sich folgende Werte:\\
 \hline
 Essigsäure & &\\
  $K_{\mathrm{S}}$  bei $25^\circ\text{C}$ & $2,5 \cdot 10^{-5} \pm 1,5 \cdot 10^{-7}$& $1,738 \cdot 10^{-5}$\\
-$\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & $ 0,030\, \pm 0,018 $& 0,03905\\
+$\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & $ 0,030\, \pm 0,012 $& 0,03905\\
 \hline
 Kaliumchlorid & &\\
 $\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & 0,015 $\pm$ 0,000025 & 0,01503\\
@@ -533,11 +545,14 @@ $\Lambda^0\, [\mathrm{S} \cdot \mathrm{m^2} \cdot \mathrm{mol^{-1}}]$ & 0,015 $\
 Auffällig ist eine große Abweichung der Werte vom Literaturwert, die durch die Fehlergrenzen nicht mit einbegriffen wird. Mit einer Abweichung von 1 $\%$ der obersten Fehlergrenze vom Literaturwert liegt die Grenzleitfähigkeit von Kaliumchlorid sehr nah am Literaturwert. \\
 Der Literaturwert der Grenzleitfähigkeit von Essigsäure wird durch die Fehlergrenzen mit eingeschlossen; für $K_\mathrm{S}$ ist der Fehler allerdings wieder zu klein.\\
 
-In dem Versuch wird mit sehr vielen verscheiden fehlerbehafteten Größen gerechnet (besonders die Lösungen), wodurch sich für die einzelnen Werte unterschiedlich große Fehlerbalken ergeben. Die grafische Bestimmung der Fehler ist schwierig, da nur wenig Messwerte vorhanden sind. \\
+In dem Versuch wird mit sehr vielen verschiedenen fehlerbehafteten Größen gerechnet (besonders beim Verdünnen der Lösungen), wodurch sich für die einzelnen Werte unterschiedlich große Fehlerbalken ergeben. Die grafische Bestimmung der Fehler ist schwierig, da nur wenig Messwerte vorhanden sind. \\
 
 Die größten Fehlerquellen liegen demnach bei der Auswertung. Zur Verbesserung könnten die Leitfähigkeiten von noch schwächer verdünnten Lösungen gemessen werden, um die grafische Extrapolation zu vereinfachen.  \\
 
 Fehler bzw. Ungenauigkeiten bei der Messung entstanden vor allem durch die Handhabung des Konduktometers. Durch das Springen der Skala um verschiedene Potenzen wurde das Ablesen der Werte sehr unübersichtlich und anfällig für Potenzfehler. Zwischenzeitiges Abspülen der Leitfähigkeits- Messzelle gestaltete sich außerdem als schwierig. \\
+
+Letzendlich ergibt sich bei Essigsäure eine zu kleine Grenzleitfähigkeit, die von einer zu kleinen Konzentration kommen muss oder von einem fehlerhaften Messergebnis des Gerätes. Dadurch, dass $K_\mathrm{S}$ letzendlich mit dem reziproken Wert der Steigung berechnet wird, ergibt sich ein zu großer $K_\mathrm{S}$- Wert verglichen mit dem Literaturwert. \\
+Die Abweichung der Grenzleitfähigkeit von Kaliumchlorid kann aufgrund der zu wenigen signifikanten Stellen nicht eindeutig bestimmt werden. Die Fehlergrenzen sind allerdings zu klein, was entweder von zu kleinen bestimmten Fehlern kommt systematischen Fehlern bei der Durchführung kommt. \\
 
 
 \newpage
